@@ -2,13 +2,13 @@
 In the telecom industry, customers are able to choose f84.Nandurent services. Churn Phase: The customer is said to have churned. © 2020 GitHub, Inc.
 Problem Statement 
 
-Business Problem Overview
+-Business Problem Overview:
 In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
 For many incumbent operators, retaining high profitable customers is the number one business goal.To reduce customer churn, telecom companies need to predict which customers are at high risk of churn.
 In this project, we analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.
 
  
-Understanding and Defining Churn
+-Understanding and Defining Churn:
 There are two main models of payment in the telecom industry - postpaid (customers pay a monthly/annual bill after using the services) and prepaid (customers pay/recharge with a certain amount in advance and then use the services).
 In the postpaid model, when customers want to switch to another operator, they usually inform the existing operator to terminate the services, and you directly know that this is an instance of churn.
 However, in the prepaid model, customers who want to switch to another network can simply stop using the services without any notice, and it is hard to know whether someone has actually churned or is simply not using the services temporarily (e.g. someone may be on a trip abroad for a month or two and then intend to resume using the services again).
@@ -17,7 +17,7 @@ This project is based on the Indian and Southeast Asian market.
 
  
 
-Definitions of Churn
+-Definitions of Churn:
 There are various ways to define churn, such as:
 - Revenue-based churn: Customers who have not utilised any revenue-generating facilities such as mobile internet, outgoing calls, SMS etc. over a given period of time. One could also use aggregate metrics such as ‘customers who have generated less than INR 4 per month in total/average/median revenue’.
 - The main shortcoming of this definition is that there are customers who only receive calls/SMSes from their wage-earning counterparts, i.e. they don’t generate revenue but use the services. For example, many users in rural areas only receive calls from their wage-earning siblings in urban areas.
@@ -35,7 +35,7 @@ The business objective is to predict the churn in the last (i.e. the ninth) mont
 
  
 
-Understanding Customer Behaviour During Churn
+-Understanding Customer Behaviour During Churn:
 Customers usually do not decide to switch to another competitor instantly, but rather over a period of time (this is especially applicable to high-value customers). In churn prediction, we assume that there are three phases of customer lifecycle :
 
 - The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
@@ -49,9 +49,7 @@ The first two months are the ‘good’ phase, the third month is the ‘action�
 
 
 Data Dictionary - 
-The data dictionary contains meanings of abbreviations. Some frequent ones are loc (local), IC (incoming), OG (outgoing), T2T (telecom operator to telecom operator), T2O (telecom operator to another operator), RECH (recharge) etc.
-
- 
+The data dictionary contains meanings of abbreviations. Some frequent ones are loc (local), IC (incoming), OG (outgoing), T2T (telecom operator to telecom operator), T2O (telecom operator to another operator), RECH (recharge) etc. 
 
 The attributes containing 6, 7, 8, 9 as suffixes imply that those correspond to the months 6, 7, 8, 9 respectively.
 
